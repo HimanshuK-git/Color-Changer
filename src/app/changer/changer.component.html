@@ -1,0 +1,16 @@
+<div class="container {{ type }} my-5 py-5 px-5" style="border: solid;">
+    <div class="bg-light m-auto" style="width: 50%;">
+        <div class="first-line p-3">
+            <button type="button" class="btn btn-danger shadow" (click)="red()">RED</button>
+            <button type="button" class="btn btn-success shadow" (click)="green()" style="float: right;">GREEN</button>
+        </div>
+        <p class="text-center {{ type }} shadow"><span class="p-2">{{ text }}</span></p>
+        <div class="second-line p-3">
+            <button type="button" class="btn btn-primary shadow" (click)="blue()">BLUE</button>
+            <button type="button" class="btn btn-warning shadow" (click)="yellow()" style="float: right;">YELLOW</button>
+        </div>
+    </div>
+</div>
+<div class="text-center shadow">
+    <button type="button" class="btn btn-light p-2" style="border: solid thin;" (click)="normal()">WANNA GO BACK TO NORMAL ?</button>
+</div>
