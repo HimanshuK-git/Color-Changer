@@ -35,7 +35,7 @@
             </div>
             <div class="summary my-5" style="background-color: lightgrey;" *ngIf="!(recipe[0].summary==='')">
                 <h4 class="display-4 p-2" style="background-image: linear-gradient(to right,gold,red);">Summary</h4>
-                <p class="p-4">{{ recipe[0].summary}}</p>
+                <p class="p-4" [outerHTML]="recipe[0].summary"></p>
             </div>
             <div class="wine my-5" style="background-color: lightgrey;" *ngIf="(wineText!='')">
                 <h4 class="display-4 p-2" style="background-image: linear-gradient(to right,gold,red);">Wine Advice</h4>
